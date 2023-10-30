@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+.bodies{
+    background-color:rgb(222, 222, 222);
+    padding: 10px;
+    
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 20px;
+    }
+h1,h2,h3,h4,h5,h6{
+    color: blue;
+    text-align: center;
+}
+
+/* .special{
+    color: aqua;
+    font-weight: bold;
+    font-size: large;
+} */
+
+h1+h2{
+    color: brown;
+    font-size: medium;
+    font-weight: bold;
+} 
+a:hover{
+    color: grey;
+    text-decoration: none;
+} 
+a .special{
+    color: yellowgreen;
+    background-color: black;
+    padding: auto;
+}
+/* #example{
+    color: violet;
+} */
+*{
+    color: peru;
+}
+input[type="text"],
+input[type="email"],
+input[type="Number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: auto;
+    border: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+fieldset{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px;
+}
+input[type="submit"]{
+    border: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: green;
+}

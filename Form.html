@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collecting Information</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="bodies">
+    <!-- this form tag is used so that when a person press the submit button he will get the promt of unfilled data that is required  -->
+    <form action="">
+    <div>
+        <h1 id="example">Personal Information</h1>
+        <p style="font-size: xx-small;">*All the required field is neccessary</p>
+    </div>
+    <!-- THis is a Name Comment -->
+    <div>
+        <!-- required tag is used so that the client won't be able to submit until he fills the required data  -->
+        <p>Name:<sup>*</sup><input type="text" name="Name" id="name" required placeholder="Enter your Name"></p>
+    </div>
+    <!-- This is to get Information for Gender -->
+    <div>
+         <fieldset>
+            <!-- fieldset is used for putting a field around the data given inside it  -->
+            <legend>
+                <!-- Legend is used to give data between the fieldset -->
+            Gender<sup>*</sup>
+            </legend>
+            <p> Male<input type="radio" name="Gender" id="genderM">
+              Female<input type="radio" name="Gender" id="genderF">
+              Others<input type="radio" name="Gender" id="genderO"required>
+        </p>
+    </fieldset>
+    </div>
+    <div><br>
+        <!-- Textarea is to give area big enough space to write  -->
+        Address:- <br>
+            <textarea name="Address" id="address" cols="80" rows="5"></textarea>
+    </div>
+    <div>
+       <p> Email:<sup>*</sup>
+         <input type="email" name="Email" id="email"required></p>
+    </div>
+    <div>
+        <p>
+            Pincode: <input type="number" name="Number" id="number">
+        </p>
+    </div>
+    <div>
+        <h2>
+            Payment Information
+        </h2>
+    </div>
+    <div>
+        <p>
+            Card Type:<sup>*</sup>
+            <!-- this is important as we are giving Information -->
+            <select name="Card type" id="card type"required>
+            <option value="">--Select your Card Type--</option>
+            <option value="Visa" id="visa">Visa</option>
+            <option value="Mastercard" id="mastercard">Mastercard</option>
+            <option value="rupay" id="rupay">rupay</option>
+        </select>
+        </p>
+    </div>
+      <div>
+        <p>
+            Card Number:<sup>*</sup>
+            <input type="number" name="Card Number" id="card number"required>
+        </p>
+      </div>  
+      <div>
+        <p>
+            Expiration Date:
+            <input type="date"Date" id="date"required>
+        </p>
+      </div>
+      <div>
+        <p>
+            CVV:
+            <input type="number" name="CVV" id="cvv"required>
+        </p>
+      </div>
+      <div>
+        <p>
+            <!-- this submit button will show pay now as we have given the value="Pay Now" -->
+            <input type="submit" value="Pay Now" id="pay now">
+        </p>
+      </div>
+    </form>
+    </div>
+</body>
+</html>
